@@ -43,8 +43,8 @@ function binaryRepresentation(num) {
   return '';
 }
 
-//O(n)
-  //the function is called until the number being divided is at zero
+//O(log(n))
+  //the function is called ande divided by 2 until the number being divided is at zero
 
   function factorial(num) {
     if (num === 0) return 1;
@@ -68,8 +68,8 @@ function fib(num) {
   return fib(num - 1) + fib(num - 2);
 }
 
-//O(n)
-  //it runs fib until the num return less than equal 0 or less than equal 2
+//O(2^n)
+  //the function is calling itself twice until it reaches the base case
 
 function nthTriangularNumber(num){
   if(num === 0) return 0;
